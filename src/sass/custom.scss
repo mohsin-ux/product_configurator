@@ -2,29 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-
 
 //-------------- laptop view --------------
 
-@media(max-width: 1440px) {
+@media (max-width: 1440px) {
   .main {
     height: 100vh;
-    background-color: #B6B6B6;
+    background-color: #b6b6b6;
     display: flex;
     align-items: center;
     justify-content: center;
-
 
     // <!-- main section -->
     .mainSection {
       max-width: 880px;
       max-height: 600px;
       display: flex;
-
-
 
       // <!------ 1st section -------->
       .mainContent {
@@ -58,20 +53,20 @@
 
               border: none;
               padding: 8px 12px;
-              border: 1px solid #EAEAF0;
+              border: 1px solid #eaeaf0;
               outline: none;
               font-size: 15px;
-              background: #F8F8FA;
+              background: #f8f8fa;
               color: #404855;
             }
 
             button {
-              background: #F8F8FA;
+              background: #f8f8fa;
               border: none;
               padding: 0;
               position: absolute;
               right: 20px;
-              top: 10px
+              top: 10px;
             }
           }
 
@@ -110,11 +105,9 @@
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
-
                 }
 
                 .text {
-
                   color: white;
                   font-size: 15px;
                   position: absolute;
@@ -129,14 +122,12 @@
 
       // <!-- ------------- side-bar ------------- -->
       .sideBar {
-
-        background-color: #EEEDE8;
+        background-color: #eeede8;
         padding: 24px 16px 12px 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
 
         // <!------------ labels ------------>
         .label {
@@ -150,7 +141,6 @@
             cursor: pointer;
             color: red;
 
-
             &:active {
               background: red;
             }
@@ -160,15 +150,12 @@
               font-size: 14px;
               gap: 6px;
               display: flex;
-              color: #7A7A7A;
+              color: #7a7a7a;
               text-align: left;
-              border-bottom: 1px solid #DEDAD4;
+              border-bottom: 1px solid #dedad4;
             }
           }
-
         }
-
-
 
         // <!-- ------------- buttons ------------- -->
         .footer {
@@ -181,7 +168,7 @@
             // width: 230px;
             padding: 6px 10px;
             border: none;
-            background-color: #FFF;
+            background-color: #fff;
             gap: 20px;
 
             .first {
@@ -208,10 +195,8 @@
             border: none;
             font-size: 16px;
             font-weight: 500;
-
           }
         }
-
       }
     }
   }
