@@ -20,17 +20,20 @@
 
     // <!-- main section -->
     .mainSection {
-      // max-width: 880px;
+      max-width: 880px;
+      max-height: 600px;
       display: flex;
+
 
 
       // <!------ 1st section -------->
       .mainContent {
         background: white;
+        flex-basis: 75%;
 
         .innerContent {
-          // max-height: 500px;
-          // overflow: scroll;
+          height: 100%;
+          overflow-y: scroll;
           padding: 24px;
 
           display: inline-flex;
@@ -51,7 +54,7 @@
             position: relative;
 
             input {
-              // width: 100%;
+              width: 100%;
 
               border: none;
               padding: 8px 12px;
@@ -80,41 +83,52 @@
             flex-wrap: wrap;
             gap: 24px 10px;
 
-            .img {
-              position: relative;
-              width: 177px;
-              height: 180px;
-              background-image: url('../../dist/pictures/Frame.png');
-              background-size: cover;
-              background-origin: border-box;
+            .imgButton {
+              border: none;
 
-              i {
-                padding: 7px;
-                color: red;
-                background-color: white;
-                border-radius: 50%;
-                position: absolute;
-                top: 7px;
-                right: 10px;
+              .pic {
+                width: 177px;
+                height: 180px;
+                position: relative;
 
-              }
+                .icon {
+                  cursor: pointer;
+                  padding: 5px;
+                  border: none;
+                  position: absolute;
+                  background-color: transparent;
+                  top: 10px;
+                  right: 10px;
 
-              p {
-                color: white;
-                font-size: 15px;
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
+                  .fa {
+                    font-size: 15px;
+                    color: white;
+                  }
+                }
+
+                .img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+
+                }
+
+                .text {
+
+                  color: white;
+                  font-size: 15px;
+                  position: absolute;
+                  bottom: 10px;
+                  left: 10px;
+                }
               }
             }
-
           }
-
         }
       }
 
       // <!-- ------------- side-bar ------------- -->
-      .menu {
+      .sideBar {
 
         background-color: #EEEDE8;
         padding: 24px 16px 12px 16px;
@@ -123,24 +137,38 @@
         align-items: center;
         justify-content: space-between;
 
+
         // <!------------ labels ------------>
         .label {
-
           display: flex;
           gap: 8px;
           flex-direction: column;
-          color: #7A7A7A;
-          align-self: stretch;
 
-          .order {
-            padding-bottom: 5px;
-            font-size: 14px;
-            gap: 6px;
-            display: flex;
-            align-self: stretch;
-            border-bottom: 1px solid #DEDAD4;
+          button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            color: red;
+
+
+            &:active {
+              background: red;
+            }
+
+            .order {
+              padding-bottom: 5px;
+              font-size: 14px;
+              gap: 6px;
+              display: flex;
+              color: #7A7A7A;
+              text-align: left;
+              border-bottom: 1px solid #DEDAD4;
+            }
           }
+
         }
+
+
 
         // <!-- ------------- buttons ------------- -->
         .footer {
@@ -154,7 +182,6 @@
             padding: 6px 10px;
             border: none;
             background-color: #FFF;
-
             gap: 20px;
 
             .first {
@@ -184,89 +211,7 @@
 
           }
         }
-      }
-    }
-  }
-}
 
-
-
-@media(max-width: 870px) {
-  // .mainSection {
-  //   // max-width: 600px;
-  // }
-
-  // .mainContent {
-  //   // max-width: 420px;
-  // }
-}
-
-
-
-
-
-// ------------ mobile view -------------- 
-@media (max-width: 680px) {
-  .main {
-    // background-color: red;
-    align-items: center;
-    // align-items: center;
-
-
-    .mainSection {
-      // max-width: 420px;
-      height: auto;
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-
-      .maincontent {
-        .innerContent {
-          max-height: none;
-        }
-      }
-
-      .menu {
-        // width: 420px;
-
-        .label {
-          display: none;
-        }
-
-        .footer {
-          position: absolute;
-          bottom: -2px;
-
-
-          .button-1 {
-            // width: 100%;
-            background-color: #EEEDE8;
-            text-align: center;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            align-items: center;
-            // text-align: center;
-
-            &::before {
-              content: "";
-              text-align: center;
-              display: block;
-              // width: 1000%;
-              // width: 40px;
-              height: 4px;
-              margin: 0 0 0 100px;
-              background: black;
-            }
-
-          }
-
-          // .button-2 {
-          //   // width: 420px;
-
-          // }
-        }
       }
     }
   }
