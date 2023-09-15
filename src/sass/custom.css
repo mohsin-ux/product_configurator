@@ -1,184 +1,263 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-@media (max-width: 1440px) {
-  .main {
-    height: 100vh;
-    background-color: #b6b6b6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .main .mainSection {
-    max-width: 880px;
-    max-height: 600px;
-    display: flex;
-  }
-  .main .mainSection .mainContent {
-    background: white;
-    flex-basis: 75%;
-  }
-  .main .mainSection .mainContent .innerContent {
-    height: 100%;
-    overflow-y: scroll;
-    padding: 24px;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .main .mainSection .mainContent .innerContent .heading {
-    font-size: 24px;
-    font-weight: 700;
-    color: #111;
-    margin: 0;
-  }
-  .main .mainSection .mainContent .innerContent .searchBar {
-    position: relative;
-  }
-  .main .mainSection .mainContent .innerContent .searchBar input {
-    width: 100%;
-    border: none;
-    padding: 8px 12px;
-    border: 1px solid #eaeaf0;
-    outline: none;
-    font-size: 15px;
-    background: #f8f8fa;
-    color: #404855;
-  }
-  .main .mainSection .mainContent .innerContent .searchBar button {
-    background: #f8f8fa;
-    border: none;
-    padding: 0;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-  }
-  .main .mainSection .mainContent .innerContent .pictures {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 24px 10px;
-  }
-  .main .mainSection .mainContent .innerContent .pictures .imgButton {
-    border: none;
-  }
-  .main .mainSection .mainContent .innerContent .pictures .imgButton .pic {
-    width: 177px;
-    height: 180px;
-    position: relative;
-  }
-  .main
-    .mainSection
-    .mainContent
-    .innerContent
-    .pictures
-    .imgButton
-    .pic
-    .icon {
-    cursor: pointer;
-    padding: 5px;
-    border: none;
-    position: absolute;
-    background-color: transparent;
-    top: 10px;
-    right: 10px;
-  }
-  .main
-    .mainSection
-    .mainContent
-    .innerContent
-    .pictures
-    .imgButton
-    .pic
-    .icon
-    .fa {
-    font-size: 15px;
-    color: white;
-  }
-  .main .mainSection .mainContent .innerContent .pictures .imgButton .pic .img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-  .main
-    .mainSection
-    .mainContent
-    .innerContent
-    .pictures
-    .imgButton
-    .pic
-    .text {
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-  }
-  .main .mainSection .sideBar {
-    background-color: #eeede8;
-    padding: 24px 16px 12px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .main .mainSection .sideBar .label {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-  }
-  .main .mainSection .sideBar .label button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    color: red;
-  }
-  .main .mainSection .sideBar .label button:active {
-    background: red;
-  }
-  .main .mainSection .sideBar .label button .order {
-    padding-bottom: 5px;
-    font-size: 14px;
-    gap: 6px;
-    display: flex;
-    color: #7a7a7a;
-    text-align: left;
-    border-bottom: 1px solid #dedad4;
-  }
-  .main .mainSection .sideBar .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main .mainSection .sideBar .footer .button-1 {
-    padding: 6px 10px;
-    border: none;
-    background-color: #fff;
-    gap: 20px;
-  }
-  .main .mainSection .sideBar .footer .button-1 .first {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .main .mainSection .sideBar .footer .button-1 .second {
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .main .mainSection .sideBar .footer .button-1 .third {
-    font-size: 18px;
-    font-weight: 700;
-  }
-  .main .mainSection .sideBar .footer .button-2 {
-    background: #404853;
-    color: white;
-    padding: 11px 10px;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-  }
-} /*# sourceMappingURL=custom.css.map */
+.main {
+  height: 100vh;
+  background-color: #b6b6b6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .mainSection {
+  max-width: 920px;
+  max-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main .mainSection .mainContent {
+  background: white;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  position: relative;
+}
+
+.main .mainSection .mainContent .innerContent {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.main .mainSection .mainContent .innerContent .heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.main .mainSection .mainContent .innerContent .searchBar {
+  position: relative;
+}
+
+.main .mainSection .mainContent .innerContent .searchBar input {
+  width: 100%;
+  border: none;
+  padding: 8px 12px;
+  border: 1px solid #eaeaf0;
+  outline: none;
+  font-size: 15px;
+  background: #f8f8fa;
+  color: #404855;
+}
+
+.main .mainSection .mainContent .innerContent .searchBar button {
+  background: #f8f8fa;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.main .mainSection .mainContent .innerContent .pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px 10px;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton {
+  width: 175px;
+  height: 180px;
+  position: relative;
+  border: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton:hover {
+  padding: 2px;
+  border: 3px solid red;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton .icon {
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton .icon .fa {
+  margin: 3px;
+  font-size: 15px;
+  color: #DA6649;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton .text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.sideBar {
+  max-width: 300px;
+  min-width: 230px;
+  background-color: #eeede8;
+  padding: 24px 16px 12px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sideBar .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sideBar .label .groupButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-bottom: 1px solid #dedad4;
+}
+
+.sideBar .label .groupButton:active {
+  background: red;
+}
+
+.sideBar .label .groupButton .renderGroups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sideBar .label .groupButton .renderGroups .renderGroupLabel {
+  width: 40%;
+  padding-bottom: 5px;
+  font-size: 14px;
+  gap: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #7a7a7a;
+  text-align: left;
+}
+
+.sideBar .label .groupButton .renderGroups .textColor {
+  color: black;
+}
+
+.sideBar .label .groupButton .renderGroups .renderImgLabel {
+  width: 60%;
+  color: #DA6649;
+  text-align: start;
+}
+
+.sideBar .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sideBar .footer .button-1 {
+  padding: 6px 10px;
+  border: none;
+  background-color: #fff;
+  gap: 20px;
+}
+
+.sideBar .footer .button-1 .first {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.sideBar .footer .button-1 .second {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sideBar .footer .button-1 .third {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sideBar .footer .button-2 {
+  background: #404853;
+  color: white;
+  padding: 11px 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.displayNone {
+  display: none;
+}
+/*# sourceMappingURL=custom.css.map */
