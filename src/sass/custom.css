@@ -80,6 +80,7 @@
   position: absolute;
   right: 20px;
   top: 10px;
+  color: black;
 }
 
 .main .mainSection .mainContent .innerContent .pictures {
@@ -92,6 +93,21 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 24px 10px;
+  position: relative;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .icon {
+  height: 25px;
+  z-index: 10;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  top: 10px;
+  right: 40px;
+  margin: 0 -39px  0 0;
 }
 
 .main .mainSection .mainContent .innerContent .pictures .imgButton {
@@ -108,21 +124,8 @@
   border: 3px solid red;
 }
 
-.main .mainSection .mainContent .innerContent .pictures .imgButton .icon {
-  cursor: pointer;
-  background-color: white;
-  padding: 5px;
-  border: none;
-  border-radius: 50px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.main .mainSection .mainContent .innerContent .pictures .imgButton .icon .fa {
-  margin: 3px;
-  font-size: 15px;
-  color: #DA6649;
+.main .mainSection .mainContent .innerContent .pictures .imgButton:active {
+  padding: 10px;
 }
 
 .main .mainSection .mainContent .innerContent .pictures .imgButton .img {
@@ -140,9 +143,29 @@
   left: 10px;
 }
 
+.main .mainSection .mainContent .innerContent .pictures .imgButton .large {
+  width: 620px;
+  height: 551px;
+  background: #202020;
+  z-index: 100;
+  position: fixed;
+  top: 50px;
+  left: 97px;
+  padding: 70px 20px 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .mainSection .mainContent .innerContent .pictures .imgButton .large::before {
+  content: 'Detailansicht verlassen';
+  color: white;
+  position: relative;
+  top: 200px;
+}
+
 .sideBar {
   max-width: 300px;
-  min-width: 230px;
+  min-width: 300px;
   background-color: #eeede8;
   padding: 24px 16px 12px 16px;
   display: -webkit-box;
@@ -196,9 +219,6 @@
   padding-bottom: 5px;
   font-size: 14px;
   gap: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #7a7a7a;
   text-align: left;
 }
@@ -207,10 +227,11 @@
   color: black;
 }
 
-.sideBar .label .groupButton .renderGroups .renderImgLabel {
+.sideBar .label .groupButton .renderGroups .renderOptionLabel {
   width: 60%;
   color: #DA6649;
   text-align: start;
+  background-color: green;
 }
 
 .sideBar .footer {
@@ -226,35 +247,46 @@
           justify-content: center;
 }
 
-.sideBar .footer .button-1 {
+.sideBar .footer .button1 {
   padding: 6px 10px;
   border: none;
   background-color: #fff;
   gap: 20px;
 }
 
-.sideBar .footer .button-1 .first {
+.sideBar .footer .button1 .first {
   font-size: 14px;
   font-weight: 300;
 }
 
-.sideBar .footer .button-1 .second {
+.sideBar .footer .button1 .second {
   font-size: 14px;
   font-weight: 700;
 }
 
-.sideBar .footer .button-1 .third {
+.sideBar .footer .button1 .third {
   font-size: 18px;
   font-weight: 700;
 }
 
-.sideBar .footer .button-2 {
+.sideBar .footer .button2 {
   background: #404853;
   color: white;
-  padding: 11px 10px;
+  padding: 11px 0;
   border: none;
   font-size: 16px;
   font-weight: 500;
+}
+
+.sideBar .footer .back {
+  border: none;
+  cursor: pointer;
+  color: #404855;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .displayNone {
